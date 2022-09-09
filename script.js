@@ -80,6 +80,29 @@ function guessedWord()
 function updateMistakes()
 {
     document.getElementById('mistakes').innerHTML = mistakes;
+    switch(mistakes)
+    {
+        case 1:
+            document.getElementById("hangmanPic").src="./images/1.jpg";
+            break;
+        case 2:
+            document.getElementById("hangmanPic").src="./images/2.jpg";
+            break
+        case 3:
+            document.getElementById("hangmanPic").src="./images/3.jpg";
+            break;
+        case 4:
+            document.getElementById("hangmanPic").src="./images/4.jpg";
+            break;
+        case 5:
+            document.getElementById("hangmanPic").src="./images/5.jpg";
+            break;
+        case 6:
+            document.getElementById("hangmanPic").src="./images/6.jpg";
+            break;
+    }
+    if(mistakes == 1)
+        document.getElementById("hangmanPic").src="./images/1.jpg";
 }
 
 document.getElementById('maxWrong').innerHTML = maxWrong;
