@@ -101,8 +101,6 @@ function updateMistakes()
             document.getElementById("hangmanPic").src="./images/6.jpg";
             break;
     }
-    if(mistakes == 1)
-        document.getElementById("hangmanPic").src="./images/1.jpg";
 }
 
 document.getElementById('maxWrong').innerHTML = maxWrong;
